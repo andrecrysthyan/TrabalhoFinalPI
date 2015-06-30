@@ -1,0 +1,1 @@
+Template.timeline.helpers({ posts: function() { return [ {message: "Ola!"}, {message: "tudo bem?"} ]; } }); 
