@@ -1,5 +1,5 @@
 # TrabalhoFinalPI 
-ta ossoooo
+ta ossooooo
 #MeDeixaFormarFelipe
 
 testando deploy nuvem
