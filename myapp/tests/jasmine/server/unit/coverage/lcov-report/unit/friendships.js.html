@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for unit\friendships.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../prettify.css">
+    <link rel="stylesheet" href="../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">unit\friendships.js</span></h1>
+    <h2>
+        Statements: <span class="metric">1.52% <small>(1 / 66)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">0% <small>(0 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">1.52% <small>(1 / 66)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">unit/</a> &#187; friendships.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">describe("Friendships", <span class="fstat-no" title="function not covered" >function() {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  var userId = 999;</span>
+<span class="cstat-no" title="statement not covered" >  var friendId = 123;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  beforeEach(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >    spyOn(Meteor, "userId").and.returnValue(userId);</span>
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  it("should follow a friend", <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >    spyOn(Friendships, "insert");</span>
+<span class="cstat-no" title="statement not covered" >    Friendships.follow(friendId);</span>
+<span class="cstat-no" title="statement not covered" >    var insertedArgs = Friendships.insert.calls.argsFor(0);</span>
+<span class="cstat-no" title="statement not covered" >    var expectedArgs = [{userId: userId, friendId: friendId}];</span>
+<span class="cstat-no" title="statement not covered" >    expect(expectedArgs).toEqual(insertedArgs);</span>
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  it("should unfollow a friend", <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >    spyOn(Friendships, "remove");</span>
+<span class="cstat-no" title="statement not covered" >    Friendships.unfollow(friendId);</span>
+<span class="cstat-no" title="statement not covered" >    var removedArgs = Friendships.remove.calls.argsFor(0);</span>
+<span class="cstat-no" title="statement not covered" >    var expectedArgs = [{userId: userId, friendId: friendId}];</span>
+<span class="cstat-no" title="statement not covered" >    expect(expectedArgs).toEqual(removedArgs);</span>
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  it("should return object when user is following", <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >    var fakeCursor = {_id: 321, userId: userId, friendId: friendId};</span>
+<span class="cstat-no" title="statement not covered" >    spyOn(Friendships, "findOne").and.returnValue(fakeCursor);</span>
+<span class="cstat-no" title="statement not covered" >    expect(Friendships.isFollowing(friendId)).toEqual(fakeCursor);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    var findOneArgs = Friendships.findOne.calls.argsFor(0);</span>
+<span class="cstat-no" title="statement not covered" >    var expectedArgs = [{userId: userId, friendId: friendId}];</span>
+<span class="cstat-no" title="statement not covered" >    expect(expectedArgs).toEqual(findOneArgs);</span>
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  it("should return empty when user is not following", <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >    var fakeCursor = {};</span>
+<span class="cstat-no" title="statement not covered" >    spyOn(Friendships, "findOne").and.returnValue(fakeCursor);</span>
+<span class="cstat-no" title="statement not covered" >    expect(Friendships.isFollowing(friendId)).toEqual(fakeCursor);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    var findOneArgs = Friendships.findOne.calls.argsFor(0);</span>
+<span class="cstat-no" title="statement not covered" >    var expectedArgs = [{userId: userId, friendId: friendId}];</span>
+<span class="cstat-no" title="statement not covered" >    expect(expectedArgs).toEqual(findOneArgs);</span>
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  it("should return user's followings", <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >    var fakeResult = 3;</span>
+<span class="cstat-no" title="statement not covered" >    var fakeCursor = {</span>
+      count: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >        return fakeResult;</span>
+      }
+    };
+<span class="cstat-no" title="statement not covered" >    spyOn(Friendships, "find").and.returnValue(fakeCursor);</span>
+<span class="cstat-no" title="statement not covered" >    expect(Friendships.followings(userId)).toEqual(fakeResult);</span>
+    
+<span class="cstat-no" title="statement not covered" >    var findArgs = Friendships.find.calls.argsFor(0);</span>
+<span class="cstat-no" title="statement not covered" >    var expectedArgs = [{userId: userId}];</span>
+<span class="cstat-no" title="statement not covered" >    expect(expectedArgs).toEqual(findArgs);</span>
+  });
+    
+<span class="cstat-no" title="statement not covered" >  it("should return user's followers", <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >    var fakeResult = 3;</span>
+<span class="cstat-no" title="statement not covered" >    var fakeCursor = {</span>
+      count: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >        return fakeResult;</span>
+      }
+    };
+<span class="cstat-no" title="statement not covered" >    spyOn(Friendships, "find").and.returnValue(fakeCursor);</span>
+<span class="cstat-no" title="statement not covered" >    expect(Friendships.followers(friendId)).toEqual(fakeResult);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    var findArgs = Friendships.find.calls.argsFor(0);</span>
+<span class="cstat-no" title="statement not covered" >    var expectedArgs = [{friendId: friendId}];</span>
+<span class="cstat-no" title="statement not covered" >    expect(expectedArgs).toEqual(findArgs);</span>
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  it("should return user's timeline ids", <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >    var fakeFriends = [123, 231];</span>
+<span class="cstat-no" title="statement not covered" >    var fakeCursor = [</span>
+      {userId: userId, friendId: fakeFriends[0]},
+      {userId: userId, friendId: fakeFriends[1]}
+    ];
+<span class="cstat-no" title="statement not covered" >    var fakeResult = fakeFriends;</span>
+<span class="cstat-no" title="statement not covered" >    fakeResult.push(userId);</span>
+    
+<span class="cstat-no" title="statement not covered" >    spyOn(Friendships, "find").and.returnValue(fakeCursor);</span>
+<span class="cstat-no" title="statement not covered" >    expect(Friendships.timelineIds(userId)).toEqual(fakeResult);</span>
+    
+<span class="cstat-no" title="statement not covered" >    var findArgs = Friendships.find.calls.argsFor(0);</span>
+<span class="cstat-no" title="statement not covered" >    var expectedArgs = [{userId: userId}];</span>
+<span class="cstat-no" title="statement not covered" >    expect(expectedArgs).toEqual(findArgs);</span>
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  it("should return user's followings and followers", <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >    var fakeResult = [</span>
+      {userId: userId, friendId: friendId},
+      {userId: friendId, friendId: userId}
+    ];
+<span class="cstat-no" title="statement not covered" >    spyOn(Friendships, "find").and.returnValue(fakeResult);</span>
+<span class="cstat-no" title="statement not covered" >    expect(Friendships.followersAndFollowings(userId)).toEqual(fakeResult);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    var findArgs = Friendships.find.calls.argsFor(0);</span>
+<span class="cstat-no" title="statement not covered" >    var expectedArgs = [{$or: [{userId: userId}, {friendId: userId}]}];</span>
+<span class="cstat-no" title="statement not covered" >    expect(expectedArgs).toEqual(findArgs);</span>
+  });
+&nbsp;
+});</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Jul 01 2015 03:39:08 GMT-0300 (Hora oficial do Brasil)</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
